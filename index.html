@@ -37,36 +37,21 @@
             <h2>About Me</h2>
             <p>I'm a computer science student at Trinity College - Hartford, expected to graduate in 2028. I enjoy coding, learning new technologies, and building software that solves real problems. I'm passionate about software engineering and project management, and I actively seek opportunities to contribute and grow my skills.</p>
         </section>
-
-        .article_container div {
-    flex: 1 1 120px; /* makes boxes responsive */
-    padding: 0.8rem;
-    margin: 0.4rem;
-    border-radius: 8px;
-    text-align: center;
-    font-weight: 700;
-    color: white; /* text color */
-    background: linear-gradient(135deg, #3498db, #9b59b6); /* default gradient */
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: default;
-}
-
-/* Different colors for each skill - optional */
-.article_container div:nth-child(1) { background: #3498db; }  /* Python - blue */
-.article_container div:nth-child(2) { background: #f1c40f; color: #333; } /* JS - yellow */
-.article_container div:nth-child(3) { background: #e44d26; } /* HTML - orange-red */
-.article_container div:nth-child(4) { background: #264de4; } /* CSS - blue */
-.article_container div:nth-child(5) { background: #68a063; } /* Node.js - green */
-.article_container div:nth-child(6) { background: #61dafb; color: #333; } /* React - light blue */
-.article_container div:nth-child(7) { background: #4db33d; } /* MongoDB - green */
-.article_container div:nth-child(8) { background: #8c8c8c; } /* Express - gray */
-
-/* Hover effect */
-.article_container div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-}
-
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills_details_container">
+        <div class="article_container">
+            <div><h3>Python</h3></div>
+            <div><h3>JavaScript</h3></div>
+            <div><h3>HTML</h3></div>
+            <div><h3>CSS</h3></div>
+            <div><h3>Node.js</h3></div>
+            <div><h3>React.js</h3></div>
+            <div><h3>MongoDB</h3></div>
+            <div><h3>Express.js</h3></div>
+        </div>
+    </div>
+</section>
 
         <section id="projects">
             <h2>Projects</h2>
@@ -113,7 +98,7 @@
                     <a href="mailto:jamaludeenmohammed57@gmail.com">
                         <img src="./assets/email.png" alt="Email Icon" class="contact_icon">
                     </a>
-                    <a href="https://www.linkedin.com/in/jamaludeen-mohammed-740755200/">
+                    <a href="https://www.linkedin.com/in/jamaludeen-jamal-mohammed-740755200/">
                         <img src="./assets/LinkedIn logo.png" alt="LinkedIn Icon" class="contact_icon">
                     </a>
                 </div>
