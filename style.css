@@ -151,20 +151,32 @@ section h2 {
     animation: fadeInUp 0.8s forwards;
 }
 
-/* Assign different colors to each skill */
-.article_container div:nth-child(1) { background: #3498db; color: white; animation-delay: 0.1s; }      /* Python */
-.article_container div:nth-child(2) { background: #f1c40f; color: #333; animation-delay: 0.2s; }      /* JavaScript */
-.article_container div:nth-child(3) { background: #e44d26; color: white; animation-delay: 0.3s; }      /* HTML */
-.article_container div:nth-child(4) { background: #264de4; color: white; animation-delay: 0.4s; }      /* CSS */
-.article_container div:nth-child(5) { background: #68a063; color: white; animation-delay: 0.5s; }      /* Node.js */
-.article_container div:nth-child(6) { background: #61dafb; color: #333; animation-delay: 0.6s; }      /* React */
-.article_container div:nth-child(7) { background: #4db33d; color: white; animation-delay: 0.7s; }      /* MongoDB */
-.article_container div:nth-child(8) { background: #8c8c8c; color: white; animation-delay: 0.8s; }      /* Express */
+.article_container div {
+    width: 120px;       /* fixed width for all skill boxes */
+    height: 50px;       /* uniform height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: default;
+    transition: transform 0.3s, box-shadow 0.3s, opacity 0.6s;
+    opacity: 0;
+    animation: fadeInUp 0.8s forwards;
+    text-align: center;
+    padding: 0.5rem;
+}
 
-/* Hover effect */
-.article_container div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+/* Assign colors and animation delays */
+.article_container div:nth-child(1) { background: #3498db; color: white; animation-delay: 0.1s; }  /* Python */
+.article_container div:nth-child(2) { background: #f1c40f; color: #333; animation-delay: 0.2s; }  /* JavaScript */
+.article_container div:nth-child(3) { background: #e44d26; color: white; animation-delay: 0.3s; }  /* HTML */
+.article_container div:nth-child(4) { background: #264de4; color: white; animation-delay: 0.4s; }  /* CSS */
+.article_container div:nth-child(5) { background: #68a063; color: white; animation-delay: 0.5s; }  /* Node.js */
+.article_container div:nth-child(6) { background: #61dafb; color: #333; animation-delay: 0.6s; }  /* React */
+.article_container div:nth-child(7) { background: #4db33d; color: white; animation-delay: 0.7s; }  /* MongoDB */
+.article_container div:nth-child(8) { background: #8c8c8c; color: white; animation-delay: 0.8s; }  /* Express */
+
 }
 
 /* ----------------------- Project Section ----------------------- */
