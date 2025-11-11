@@ -1,123 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jamaludeen Mohammed | Portfolio</title>
-  <meta name="description" content="Portfolio of Jamaludeen Mohammed — Computer Science & Economics student at Trinity College, passionate about software development, cloud technology, and project management." />
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamaludeen Mohammed - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <!-- ===== HEADER ===== -->
-  <header class="header">
-    <nav class="navbar">
-      <h1 class="logo">Jamaludeen<span>.</span></h1>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- ===== HERO / PROFILE ===== -->
-  <section id="profile" class="hero">
-    <div class="hero-content">
-      <h2>Hi, I'm <span class="highlight">Jamaludeen Mohammed</span></h2>
-      <p class="subtitle">
-        A passionate <strong>Computer Science & Economics</strong> student at <strong>Trinity College</strong>, eager to build innovative and impactful solutions.
-      </p>
-      <div class="btn-group">
-        <a href="Jamaludeen Mohammed Resume.pdf" class="btn primary-btn" target="_blank">📄 View Résumé</a>
-        <a href="https://github.com/Jamal931?tab=repositories" class="btn secondary-btn" target="_blank">
-          <img src="./assets/github logo.png" alt="GitHub Logo" class="icon" /> GitHub
-        </a>
-      </div>
-    </div>
-  </section>
+    <main>
+        <section id="profile">
+            <div class="section_text animate-slide">
+                <h1>Hey, I'm Jamaludeen Mohammed</h1>
+                <p>A passionate computer science student eager to apply my skills to innovative projects.</p>
+                <div class="btn-container animate-fade">
+                    <button class="btn btn-resume" onclick="window.open('Jamaludeen Mohammed Resume.pdf')">Download Resume</button>
+                    <button class="btn btn-github" onclick="window.open('https://github.com/Jamal931?tab=repositories')">
+                        <img src="./assets/github logo.png" alt="GitHub Logo" class="github-icon">
+                    </button>
+                </div>
+            </div>
+        </section>
 
-  <!-- ===== ABOUT ===== -->
-  <section id="about" class="section">
-    <h2 class="section-title">About Me</h2>
-    <p class="section-text">
-      I'm a <strong>Computer Science</strong> and <strong>Economics</strong> student at Trinity College in Hartford, expected to graduate in 2028. 
-      I’m fascinated by how technology can solve real-world problems. My coursework and projects have strengthened my skills in 
-      <em>algorithms, data structures, and software design</em>. 
-      I’m especially interested in <strong>software engineering</strong> and <strong>product management</strong>. 
-      I’m currently seeking opportunities where I can apply my skills, learn from industry professionals, and make a meaningful impact.
-    </p>
-  </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a computer science student at Trinity College - Hartford, expected to graduate in 2028. I enjoy coding, learning new technologies, and building software that solves real problems. I'm passionate about software engineering and project management, and I actively seek opportunities to contribute and grow my skills.</p>
+        </section>
 
-  <!-- ===== SKILLS ===== -->
-  <section id="skills" class="section bg-light">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-grid">
-      <span>Python</span>
-      <span>JavaScript</span>
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>React.js</span>
-      <span>Node.js</span>
-      <span>Express.js</span>
-      <span>MongoDB</span>
-      <span>SQL</span>
-      <span>Flask</span>
-      <span>Git / GitHub</span>
-      <span>Oracle Cloud</span>
-    </div>
-  </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills_details_container">
+                <div class="article_container">
+                    <div><h3>Python</h3></div>
+                    <div><h3>JavaScript</h3></div>
+                    <div><h3>HTML</h3></div>
+                    <div><h3>CSS</h3></div>
+                    <div><h3>Node.js</h3></div>
+                    <div><h3>React.js</h3></div>
+                    <div><h3>MongoDB</h3></div>
+                    <div><h3>Express.js</h3></div>
+                </div>
+            </div>
+        </section>
 
-  <!-- ===== PROJECTS ===== -->
-  <section id="projects" class="section">
-    <h2 class="section-title">Projects</h2>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>MovieVerse</h3>
+                <p>A web application for browsing and discovering movies. Built with React and integrated with a RESTful API for a smooth experience.</p>
+                <div class="project-tech-stack">
+                    <span>React</span>
+                    <span>JavaScript</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>OMDb API</span>
+                    <span>MongoDB</span>
+                    <span>jQuery</span>
+                    <span>Express.js</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Jamal931/MovieVerse">View on GitHub</a>
+                </div>
+            </div>
 
-    <div class="project-card">
-      <h3>🎬 MovieVerse</h3>
-      <p>
-        A full-stack movie discovery web app offering personalized recommendations, built with
-        <strong>Node.js</strong>, <strong>Express</strong>, and <strong>MongoDB</strong>.
-        Integrated OMDb API and implemented caching with Redis to reduce load time by 40%.
-      </p>
-      <div class="tags">
-        <span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>React</span><span>API</span>
-      </div>
-      <a href="https://github.com/Jamal931/MovieVerse" class="project-link" target="_blank">View on GitHub →</a>
-    </div>
+            <div class="project">
+                <h3>WeatherSplash</h3>
+                <p>Dynamic weather app providing real-time information. Built with Node.js, Express, and an external weather API.</p>
+                <div class="project-tech-stack">
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>JavaScript</span>
+                    <span>OpenWeatherMap API</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Jamal931/WeatherSplash">View on GitHub</a>
+                </div>
+            </div>
+        </section>
 
-    <div class="project-card">
-      <h3>☁️ WeatherSplash</h3>
-      <p>
-        A responsive web app showing real-time weather conditions using the OpenWeatherMap API.
-        Built with <strong>React</strong> and optimized using React hooks and local caching to cut redundant API calls by 60%.
-      </p>
-      <div class="tags">
-        <span>React</span><span>JavaScript</span><span>API</span><span>HTML</span><span>CSS</span>
-      </div>
-      <a href="https://github.com/Jamal931/WeatherSplash" class="project-link" target="_blank">View on GitHub →</a>
-    </div>
-  </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out!</p>
+            <div class="contact_info_uc animate-fade">
+                <div class="contact_info_container">
+                    <a href="mailto:jamaludeenmohammed57@gmail.com">
+                        <img src="./assets/email_icon.png" alt="Email Icon" class="contact_icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/jamaludeen-mohammed-740755200/">
+                        <img src="./assets/LinkedIn logo.png" alt="LinkedIn Icon" class="contact_icon">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="section bg-light">
-    <h2 class="section-title">Contact Me</h2>
-    <p class="section-text">Let’s connect — I’m always open to discussing new ideas and opportunities.</p>
-    <div class="contact-links">
-      <a href="mailto:jamaludeenmohammed57@gmail.com" class="contact-btn">📧 Email</a>
-      <a href="https://www.linkedin.com/in/jamaludeen-jamal-mohammed-740755200/" target="_blank" class="contact-btn">🔗 LinkedIn</a>
-    </div>
-  </section>
+    <footer>
+        <p>© 2025 Jamaludeen Mohammed</p>
+    </footer>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <p>© <span id="year"></span> Jamaludeen Mohammed. Built with 💻 and passion.</p>
-  </footer>
-
-  <script>
-    // Dynamic year for footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
