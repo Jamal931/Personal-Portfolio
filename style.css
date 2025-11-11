@@ -139,14 +139,24 @@ section h2 {
 /* Skill boxes */
 .article_container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;       /* Prevent wrapping */
     gap: 1rem;
-    justify-content: flex-start;
+    overflow-x: auto;        /* Allow horizontal scroll on small screens */
+    padding-bottom: 0.5rem; /* optional, space for scrollbar */
+}
+
+.article_container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.article_container::-webkit-scrollbar-thumb {
+    background-color: #2c3e50;
+    border-radius: 3px;
 }
 
 .article_container div {
-    width: 120px;       /* fixed width */
-    height: 50px;       /* fixed height */
+    flex: 0 0 120px;       /* fixed width, no shrink */
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
