@@ -1,2 +1,2 @@
 # Personal-Portfolio
-link: https://jamaludeenmohammed.netlify.app
+link: https://jamalmoh931.netlify.app
